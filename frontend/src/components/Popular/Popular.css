@@ -1,0 +1,24 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.popular h1{
+    color: #717171;
+}
+
+.popular hr{
+    width: 80%;
+    border: 1px solid #717171;
+}
+
+@media(min-width: 768px){
+    .popular-item{
+        margin-top: 50px;
+        display: flex;
+        gap: 30px;
+    }
+}

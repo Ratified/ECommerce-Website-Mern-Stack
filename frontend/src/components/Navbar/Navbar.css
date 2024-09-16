@@ -1,0 +1,80 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    box-shadow: 0 1px 3px -2px black; 
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-menu li {
+    cursor: pointer;
+    position: relative;
+}
+
+.nav-menu li::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.nav-menu li:hover::after {
+    width: 100%; 
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 2.8rem;
+    position: relative;
+}
+
+.nav-login-cart button{
+    border: 1px solid #7a7a7a;
+    border-radius: 4.6875rem;
+    padding: 0.5rem 1.5rem;
+    color: #515151;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active{
+    background-color: #f3f3f3;
+}
+
+/* New active class */
+.nav-menu li.active::after {
+    width: 100%; 
+}
+
+.nav-cart-count{
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    padding: 0.2rem 0.5rem;
+}
