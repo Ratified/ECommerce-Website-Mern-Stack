@@ -1,16 +1,15 @@
-.popular{
+/* .new-collections{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    /* height: 90vh; */
 }
 
-.popular h1{
+.new-collections h1{
     color: #717171;
 }
 
-.popular hr{
+.new-collections hr{
     width: 80%;
     border: 1px solid #717171;
 }
@@ -18,22 +17,21 @@
 .item img{
     width: 100%;
     object-fit: contain;
-}
-
+} */
+/* 
 .item-description{
     padding: 1rem;
-}
+} */
 
 @media(min-width: 768px){
-    .popular-item{
+    .collections {
         margin: 50px;
-        display: flex;
-        gap: 2rem;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
     }
     
     .item{
         outline: 1px solid black;
-        flex: 1
     }
 }
